@@ -1,0 +1,70 @@
+import React, { ReactNode,useState } from 'react';
+
+type LayoutProps = {
+  children: ReactNode;
+};
+
+export const Layout: React.FC<LayoutProps> = ({ children }) => {
+  return (
+    <div className="flex flex-col min-h-screen">
+      <Navbar />
+      <main className="flex-grow">
+        {children}
+      </main>
+      <Footer />
+    </div>
+  );
+};
+
+const Navbar: React.FC = () => {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+  
+    return (
+      <header className="bg-light-purple text-dark-gray p-4 shadow-md">
+        <nav className="container mx-auto flex justify-between items-center">
+          <div className="text-xl font-bold text-dark-purple">SCA</div>
+          <ul className="hidden md:flex space-x-8">
+            <li><a href="#" className="text-dark-gray hover:text-dark-purple">Our Vision</a></li>
+            <li><a href="#" className="text-dark-gray hover:text-dark-purple">Contact Us</a></li>
+          </ul>
+          <div className="md:hidden">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-dark-gray focus:outline-none"
+            >
+              ☰
+            </button>
+          </div>
+        </nav>
+        {isMenuOpen && (
+          <div className="md:hidden bg-light-purple shadow-md p-4">
+            <ul>
+              <li className="py-2"><a href="#" className="text-dark-gray hover:text-dark-purple">Our Vision</a></li>
+              <li className="py-2"><a href="#" className="text-dark-gray hover:text-dark-purple">Contact Us</a></li>
+            </ul>
+          </div>
+        )}
+      </header>
+    );
+  };
+
+  const Footer: React.FC = () => (
+    <footer className="bg-light-purple text-dark-gray py-8">
+      <div className="container mx-auto text-center space-y-4">
+        <p className="font-bold text-dark-purple text-lg">
+          Disha Academy
+        </p>
+        <p>
+          Sarat Chandra IAS Academy is a premier coaching institute that provides comprehensive training for UPSC Civil Services Examination aspirants.
+        </p>
+        <div className="space-y-2">
+          <p><span className="font-bold">Address:</span> Benz Circle, Vijayawada; Ashoknagar, Hyderabad</p>
+          <p><span className="font-bold">Email:</span> saratchandraiasacademy@gmail.com</p>
+          <p><span className="font-bold">Phone:</span> 9494188688 and 9494688188</p>
+        </div>
+        <p className="text-sm mt-4">© 2024 SCA Academy. All rights reserved.</p>
+      </div>
+    </footer>
+  );
+
+export default Layout;
