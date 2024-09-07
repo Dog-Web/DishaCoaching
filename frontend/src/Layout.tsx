@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-      <header className="bg-[#FB6542] text-dark-gray p-4 shadow-md">
+      <header className="bg-[#D3C5E5] text-dark-gray p-4 shadow-md">
           <nav className="container mx-auto flex justify-between items-center">
               {/* Ensure the image path is correct */}
               {/* Adjust the height as needed */}
@@ -54,7 +54,7 @@ const Navbar: React.FC = () => {
 
 
   const Footer: React.FC = () => (
-    <footer className="bg-[#FB6542] text-dark-gray py-8">
+    <footer className="bg-[#D3C5E5] text-dark-gray py-8">
       <div className="container mx-auto text-center space-y-4">
         <p className="font-bold text-dark-purple text-lg">
         Disha Current affairs classes

@@ -4,7 +4,7 @@ function App() {
 
   return (
     <Layout>
-<div className='relative flex flex-col items-center justify-center h-80 p-5  bg-light-gray overflow-hidden'>
+<div className='relative flex flex-col items-center justify-center h-80 p-5 bg-light-gray overflow-hidden'>
   {/* Circular Bubbles */}
   <div className="absolute inset-0 flex items-center justify-center">
     {/* Extra Large Bubble with Inner Bubble */}
@@ -12,11 +12,11 @@ function App() {
       <div className="absolute w-40 h-40 bg-light-yellow rounded-full opacity-50 top-20 left-20"></div>
     </div>
     {/* Large Bubble with Inner Bubble */}
-    <div className="absolute w-64 h-64 bg-[#FFBB00] rounded-full opacity-100 -top-24 -left-24">
-      <div className="absolute w-32 h-32 bg-[#FB6542] rounded-full opacity-50 top-16 left-16"></div>
+    <div className="absolute w-64 h-64 bg-[#735DA5] rounded-full opacity-100 -top-24 -left-24">
+      <div className="absolute w-32 h-32 bg-[#735DA5] rounded-full opacity-50 top-16 left-16"></div>
     </div>
-    <div className="absolute w-64 h-64 bg-[#FB6542] rounded-full opacity-100 -bottom-24 -right-24">
-      <div className="absolute w-32 h-32 bg-[#FFBB00] rounded-full opacity-50 top-16 left-16"></div>
+    <div className="absolute w-64 h-64 bg-[#735DA5] rounded-full opacity-100 -bottom-24 -right-24">
+      <div className="absolute w-32 h-32 bg-[#735DA5] rounded-full opacity-50 top-16 left-16"></div>
     </div>
     {/* Medium Bubble with Inner Bubble */}
     <div className="absolute w-40 h-40 bg-light-blue rounded-full opacity-30 -top-16 -left-16">
@@ -27,6 +27,15 @@ function App() {
       <div className="absolute w-16 h-16 bg-light-green rounded-full opacity-50 top-8 left-8"></div>
     </div>
   </div>
+
+  {/* Logo Watermark */}
+  <img 
+    src='logo_disha.png' 
+    alt='Disha Logo' 
+    className='absolute top-1/2 left-[200px] transform -translate-y-1/2 opacity-20 z-0' 
+    style={{ width: 'auto', height: 'auto', maxWidth: '200px', maxHeight: '200px' }}
+  />
+
   <div className="relative z-10 text-center flex flex-col">
     <div className="text-3xl text-[#375E97] font-bold underline mb-4">
       Disha Current Affairs Classes
@@ -34,8 +43,8 @@ function App() {
     <div className="text-2xl">
       We provide what schools miss and we create leaders for the next generation
     </div>
-    <div className='mt-3 flex flex-col items-center' >
-    <a href="https://sarat.courses.store/543542" target="_blank" rel="noopener noreferrer">
+    <div className='mt-3 flex flex-col items-center'>
+      <a href="https://sarat.courses.store/543542" target="_blank" rel="noopener noreferrer">
         <button className="flex items-center justify-center px-1 py-2 bg-[#FFBB00] text-white rounded-lg shadow-lg transition-transform transform hover:scale-105">
           <span className="text-lg font-semibold px-1">Enroll Now</span>
           <svg
@@ -49,10 +58,11 @@ function App() {
             <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
           </svg>
         </button>
-      </a></div>
-
+      </a>
+    </div>
   </div>
 </div>
+
 
 
 <section className="bg-[#FFBB00] py-12 px-4 sm:px-6 lg:px-8">
