@@ -13,6 +13,15 @@ export default {
         'grayish-purple': '#b5a7d4',
         'dark-gray': '#333',
       },
+      animation: {
+        bounce: 'bounce 1s infinite',
+      },
+      keyframes: {
+        bounce: {
+          '0%, 100%': { transform: 'translateX(-25%)' },
+          '70%': { transform: 'translateX(0)' },
+        },
+      },
     },
   },
   plugins: [],
