@@ -8,24 +8,24 @@ function App() {
   {/* Circular Bubbles */}
   <div className="absolute inset-0 flex items-center justify-center">
     {/* Extra Large Bubble with Inner Bubble */}
-    <div className="absolute w-80 h-80 bg-light-yellow rounded-full opacity-30 -top-12 -right-24">
+    {/* <div className="absolute w-80 h-80 bg-light-yellow rounded-full opacity-30 -top-12 -right-24">
       <div className="absolute w-40 h-40 bg-light-yellow rounded-full opacity-50 top-20 left-20"></div>
-    </div>
+    </div> */}
     {/* Large Bubble with Inner Bubble */}
-    <div className="absolute w-64 h-64 bg-[#735DA5] rounded-full opacity-100 -top-24 -left-24">
+    {/* <div className="absolute w-64 h-64 bg-[#735DA5] rounded-full opacity-100 -top-24 -left-24">
       <div className="absolute w-32 h-32 bg-[#735DA5] rounded-full opacity-50 top-16 left-16"></div>
-    </div>
-    <div className="absolute w-64 h-64 bg-[#735DA5] rounded-full opacity-100 -bottom-24 -right-24">
+    </div> */}
+    {/* <div className="absolute w-64 h-64 bg-[#735DA5] rounded-full opacity-100 -bottom-24 -right-24">
       <div className="absolute w-32 h-32 bg-[#735DA5] rounded-full opacity-50 top-16 left-16"></div>
-    </div>
+    </div> */}
     {/* Medium Bubble with Inner Bubble */}
-    <div className="absolute w-40 h-40 bg-light-blue rounded-full opacity-30 -top-16 -left-16">
+    {/* <div className="absolute w-40 h-40 bg-light-blue rounded-full opacity-30 -top-16 -left-16">
       <div className="absolute w-20 h-20 bg-light-blue rounded-full opacity-50 top-10 left-10"></div>
-    </div>
+    </div> */}
     {/* Small Bubble with Inner Bubble */}
-    <div className="absolute w-32 h-32 bg-light-green rounded-full opacity-30 top-16 -right-16">
+    {/* <div className="absolute w-32 h-32 bg-light-green rounded-full opacity-30 top-16 -right-16">
       <div className="absolute w-16 h-16 bg-light-green rounded-full opacity-50 top-8 left-8"></div>
-    </div>
+    </div> */}
   </div>
 
   {/* Logo Watermark */}
@@ -44,8 +44,9 @@ function App() {
       We provide what schools miss and we create leaders for the next generation
     </div>
     <div className='mt-3 flex flex-col items-center'>
+      {/* //    background-color: rgb(28 37 128 / 81%); */}
       <a href="https://sarat.courses.store/543542" target="_blank" rel="noopener noreferrer">
-        <button className="flex items-center justify-center px-1 py-2 bg-[#FFBB00] text-white rounded-lg shadow-lg transition-transform transform hover:scale-105">
+        <button className="flex items-center justify-center px-1 py-2 bg-[#1C2580] text-white rounded-lg shadow-lg transition-transform transform hover:scale-105">
           <span className="text-lg font-semibold px-1">Enroll Now</span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -65,7 +66,7 @@ function App() {
 
 
 
-<section className="bg-[#FFBB00] py-12 px-4 sm:px-6 lg:px-8">
+<section className="bg-slate-100 py-12 px-4 sm:px-6 lg:px-8">
   <div className="container mx-auto">
     <h2 className="text-3xl font-bold text-[#375E97] mb-6 text-center">
       How Disha Current Affairs Classes Help Your Children
