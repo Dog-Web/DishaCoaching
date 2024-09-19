@@ -66,39 +66,42 @@ function App() {
 
 
 
-<section className="bg-slate-100 py-12 px-4 sm:px-6 lg:px-8">
+<section className="relative bg-slate-100 py-12 px-4 sm:px-6 lg:px-8">
   <div className="container mx-auto">
-    <h2 className="text-3xl font-bold text-[#375E97] mb-6 text-center">
+    <h2 className="text-3xl font-bold text-[#375E97] mb-12 text-center">
       How Disha Current Affairs Classes Help Your Children
     </h2>
-    <ul className="list-disc list-inside space-y-4 text-lg text-dark-gray">
-      <li>
-        <span className="font-semibold">Forms foundation</span> to clear Civil Services Exam (IAS/IPS/IRS) and many other central and state services exams.
-      </li>
-      <li>
-        <span className="font-semibold">Creates awareness</span> of what is happening in and outside India.
-      </li>
-      <li>
-        <span className="font-semibold">Increases understanding</span> of Society, Government, Economy, and applications of Science and Technology, helping them become great Entrepreneurs and Political Leaders.
-      </li>
-      <li>
-        <span className="font-semibold">Helps win state and national competitions</span> in Quiz, Debate, Essay writing, etc.
-      </li>
-      <li>
-        <span className="font-semibold">Provides international exposure</span> through foreign teachers.
-      </li>
-      <li>
-        <span className="font-semibold">Enables interaction</span> with top IAS, IPS officers; Ministers; Top entrepreneurs; International award-winning children, etc.
-      </li>
-      <li>
-        <span className="font-semibold">Fills the gap</span> left by schools and creates leaders for the next generation.
-      </li>
-    </ul>
+    
+    {/* Background shape */}
+    <div className="absolute inset-0 flex items-center justify-center">
+      <div className="bg-[#375E97] rounded-full h-[500px] w-[500px] opacity-20"></div>
+    </div>
+
+    <div className="relative grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      {[
+        { title: "Forms foundation", text: "to clear Civil Services Exam (IAS/IPS/IRS) and many other central and state services exams." },
+        { title: "Creates awareness", text: "of what is happening in and outside India." },
+        { title: "Increases understanding", text: "of Society, Government, Economy, and applications of Science and Technology, helping them become great Entrepreneurs and Political Leaders." },
+        { title: "Helps win state and national competitions", text: "in Quiz, Debate, Essay writing, etc." },
+        { title: "Provides international exposure", text: "through foreign teachers." },
+        { title: "Enables interaction", text: "with top IAS, IPS officers; Ministers; Top entrepreneurs; International award-winning children, etc." },
+        { title: "Fills the gap", text: "left by schools and creates leaders for the next generation." }
+      ].map((item, index) => (
+        <div key={index} className="relative p-8 bg-white rounded-full shadow-lg text-center transform transition duration-300 hover:scale-105">
+          <div className="flex items-center justify-center w-16 h-16 bg-[#375E97] rounded-full mb-4 mx-auto text-white font-bold text-2xl">
+            {index + 1}
+          </div>
+          <h3 className="font-semibold text-xl text-[#375E97] mb-2">{item.title}</h3>
+          <p className="text-gray-700 text-lg">{item.text}</p>
+        </div>
+      ))}
+    </div>
   </div>
 </section>
+
 <section className="bg-white py-12 px-4 sm:px-6 lg:px-8">
   <div className="container mx-auto">
-    <h2 className="text-3xl font-bold text-dark-purple mb-8 text-center">
+    <h2 className="text-3xl font-bold text-[#375E97] mb-8 text-center">
       Our Course Details
     </h2>
     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -165,7 +168,7 @@ function App() {
 
 <section className="bg-light-gray py-12 px-4 sm:px-6 lg:px-8">
   <div className="container mx-auto">
-    <h2 className="text-3xl font-bold text-dark-purple mb-8 text-center">
+    <h2 className="text-3xl font-bold text-[#375E97] mb-8 text-center">
       Recent Videos
     </h2>
     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
@@ -196,7 +199,7 @@ function App() {
 
 <section className="bg-white py-12 px-4 sm:px-6 lg:px-8">
     <div className="container mx-auto">
-      <h2 className="text-3xl font-bold text-dark-purple mb-8 text-center">
+      <h2 className="text-3xl font-bold text-[#375E97] mb-8 text-center">
         You Listen to Classes From
       </h2>
       <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">

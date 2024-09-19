@@ -26,9 +26,9 @@ const Navbar: React.FC = () => {
               {/* Adjust the height as needed */}
               <div className="flex flex-row items-center justify-center text-[25px] font-bold text-[#375E97]"> <img src='logo_disha.png' alt='Logo' className='h-20' />DCA</div>
               <ul className="hidden md:flex space-x-8">
-                  <li><a href="#" className="text-dark-gray hover:text-dark-purple">About Us</a></li>
-                  <li><a href="#" className="text-dark-gray hover:text-dark-purple">Contact</a></li>
-                  <li><a href="#" className="text-dark-gray hover:text-dark-purple">Login</a></li>
+                  <li><a href="#" className="text-dark-gray hover:text-[#375E97]">About Us</a></li>
+                  <li><a href="#" className="text-dark-gray hover:text-[#375E97]">Contact</a></li>
+                  <li><a href="#" className="text-dark-gray hover:text-[#375E97]">Login</a></li>
               </ul>
               <div className="md:hidden">
                   <button
@@ -42,9 +42,9 @@ const Navbar: React.FC = () => {
           {isMenuOpen && (
               <div className="md:hidden bg-light-purple shadow-md p-4">
                   <ul>
-                      <li className="py-2"><a href="#" className="text-dark-gray hover:text-dark-purple">About Us</a></li>
-                      <li className="py-2"><a href="#" className="text-dark-gray hover:text-dark-purple">Contact</a></li>
-                      <li className="py-2"><a href="#" className="text-dark-gray hover:text-dark-purple">Login</a></li>
+                      <li className="py-2"><a href="#" className="text-dark-gray hover:text-[#375E97]">About Us</a></li>
+                      <li className="py-2"><a href="#" className="text-dark-gray hover:text-[#375E97]">Contact</a></li>
+                      <li className="py-2"><a href="#" className="text-dark-gray hover:text-[#375E97]">Login</a></li>
                   </ul>
               </div>
           )}
@@ -56,7 +56,7 @@ const Navbar: React.FC = () => {
   const Footer: React.FC = () => (
     <footer className="bg-[#D3C5E5] text-dark-gray py-8">
       <div className="container mx-auto text-center space-y-4">
-        <p className="font-bold text-dark-purple text-lg">
+        <p className="font-bold text-[#375E97] text-lg">
         Disha Current affairs classes
                 </p>
         <p>
