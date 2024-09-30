@@ -32,8 +32,7 @@ function App() {
   <img 
     src='logo_disha.png' 
     alt='Disha Logo' 
-    className='absolute top-1/2 left-[200px] transform -translate-y-1/2 opacity-20 z-0' 
-    style={{ width: 'auto', height: 'auto', maxWidth: '200px', maxHeight: '200px' }}
+    className='absolute top-1/2 left-[20%] transform -translate-y-1/2 opacity-15 z-0' 
   />
 
   <div className="relative z-10 text-center flex flex-col">
@@ -105,6 +104,15 @@ function App() {
       Our Course Details
     </h2>
     <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div className="bg-light-purple p-6 rounded-lg shadow-lg flex items-start space-x-4">
+  <div className="text-2xl">💰</div>
+  <div>
+    <h3 className="text-xl font-semibold text-dark-gray mb-2">Pricing</h3>
+    <p className="text-dark-gray mb-1">Rs 2000 per month</p>
+    <p className="text-dark-gray">Rs 15000 per year 🏅</p>
+    <p className='font-thin'>Choose the plan that suits you best. Monthly and yearly options available.</p>
+  </div>
+</div>
       <div className="bg-[#375E97]  p-6 rounded-lg shadow-lg flex items-start space-x-4">
         <div className="text-2xl">📅</div>
         <div>
@@ -150,15 +158,7 @@ function App() {
           </p>
         </div>
       </div>
-      <div className="bg-light-purple p-6 rounded-lg shadow-lg flex items-start space-x-4">
-  <div className="text-2xl">💰</div>
-  <div>
-    <h3 className="text-xl font-semibold text-dark-gray mb-2">Pricing</h3>
-    <p className="text-dark-gray mb-1">Rs 2000 per month</p>
-    <p className="text-dark-gray">Rs 15000 per year 🏅</p>
-    <p className='font-thin'>Choose the plan that suits you best. Monthly and yearly options available.</p>
-  </div>
-</div>
+    
 
     </div>
   </div>
